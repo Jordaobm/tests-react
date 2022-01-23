@@ -1,0 +1,56 @@
+.container {
+  width: 100%;
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 20px 2%;
+}
+
+.content {
+  margin-top: 80px;
+  width: 100%;
+  display: flex;
+
+  input {
+    color: var(--black);
+    width: 500px;
+    height: 35px;
+    padding: 10px;
+
+    border: 1px solid var(--gray);
+    border-right: 0px;
+  }
+
+  button {
+    height: 35px;
+    width: 100px;
+    cursor: pointer;
+    border: none;
+    border: 1px solid var(--gray);
+    border-left: 0px;
+
+    background-color: var(--green);
+  }
+}
+
+.grid {
+  margin-top: 60px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 30px;
+
+  @media (max-width: 1024px) {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  @media (max-width: 768px) {
+    grid-template-columns: 1fr;
+  }
+}
+
+.notLogged {
+  height: calc(100vh - 150px);
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}

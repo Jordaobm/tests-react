@@ -1,0 +1,114 @@
+header {
+  width: 100%;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.containerImage {
+  width: 50px;
+  height: 30px;
+
+  img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+  }
+}
+
+.containerImageUser {
+  width: 65px;
+  height: 65px;
+  box-shadow: inset 0px 0px 0px 10px var(--black);
+  border: 2px solid var(--green);
+  border-radius: 100%;
+  padding: 5px;
+
+  img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    border-radius: 100%;
+  }
+}
+
+.link {
+  color: var(--white);
+}
+
+.links {
+  display: flex;
+  gap: 15px;
+
+  a {
+    text-decoration: none;
+
+    p {
+      transition: 0.2s;
+
+      &:hover {
+        color: var(--white);
+      }
+    }
+  }
+}
+
+.logo {
+  width: 50px;
+}
+
+.googleButton {
+  cursor: pointer;
+
+  width: 200px;
+  height: 45px;
+  background-color: var(--white);
+  border: 1px solid var(--gray2);
+  border-radius: 5px;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  p {
+    width: 75%;
+    color: var(--black);
+    font-size: 14px;
+    font-weight: 300;
+  }
+  > div {
+    height: 100%;
+    width: 25%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid var(--gray2);
+  }
+  img {
+    width: 25px;
+  }
+}
+
+.loggedButton {
+  cursor: pointer;
+  width: fit-content;
+
+  height: 45px;
+  background-color: var(--green);
+  border: 1px solid var(--green);
+  border-radius: 5px;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  padding: 0 10px;
+
+  p {
+    width: fit-content;
+    color: var(--white);
+    font-size: 14px;
+    font-weight: 600;
+  }
+}

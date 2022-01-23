@@ -1,0 +1,26 @@
+.content {
+  margin-top: 80px;
+  width: 100%;
+  display: flex;
+
+  input {
+    color: var(--black);
+    width: 500px;
+    height: 35px;
+    padding: 10px;
+
+    border: 1px solid var(--gray);
+    border-right: 0px;
+  }
+
+  button {
+    height: 35px;
+    width: 100px;
+    cursor: pointer;
+    border: none;
+    border: 1px solid var(--gray);
+    border-left: 0px;
+
+    background-color: var(--green);
+  }
+}

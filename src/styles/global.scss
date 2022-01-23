@@ -1,0 +1,22 @@
+:root {
+  --black: rgb(18, 18, 20);
+  --white: #ffffff;
+  --green: rgb(3, 155, 71);
+  --gray: rgb(115, 115, 128);
+  --gray2: #e3e3e5;
+  --orange: #ff7a29;
+  --red: #b81500;
+}
+
+* {
+  margin: 0%;
+  padding: 0%;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+  color: var(--white);
+}
+
+html,
+body {
+  background-color: var(--black);
+}

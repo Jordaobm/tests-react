@@ -1,0 +1,43 @@
+.grid {
+  margin-top: 60px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 30px;
+
+  @media (max-width: 1024px) {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  @media (max-width: 768px) {
+    grid-template-columns: 1fr;
+  }
+}
+
+.actions {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 10px;
+}
+.removeButton {
+  height: 35px;
+  width: 100px;
+  cursor: pointer;
+  border: none;
+  border: 1px solid var(--gray);
+  border-left: 0px;
+
+  background-color: var(--red);
+}
+
+.downloadButton {
+  height: 35px;
+  width: 100px;
+  cursor: pointer;
+  border: none;
+  border: 1px solid var(--gray);
+  border-left: 0px;
+
+  background-color: var(--green);
+}
